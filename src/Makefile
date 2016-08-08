@@ -15,6 +15,6 @@ kde.o: kde.c
 digPopPopulationDensity.o: digPopPopulationDensity.c
 	$(GCC) -I. -o $@ -c $<
 DigPopPopulationDensity: io.o kde.o digPopPopulationDensity.o
-	$(GCC) -o ../bin/$@ $+ $(GDALLIB) 
+	$(GCC) -o ../$@ $+ $(GDALLIB) 
 clean:
-	rm -f ../bin/DigPopPopulationDensity *.o
+	rm -f ../DigPopPopulationDensity *.o
