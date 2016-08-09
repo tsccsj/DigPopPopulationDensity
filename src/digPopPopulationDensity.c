@@ -70,7 +70,8 @@ void kernelDensity(char * inputHousehold, bool hhOnly, char * kdeOutFile, float 
 int main(int argc, char ** argv) {
 
 	if(argc != 14 && argc != 13) {
-		printf("dpPopulationDensity OutputFileName InputDigPopNamePreNumber MinRzn NumberRzn ProjectionCode NorthBounds EastBounds SoutBound WestBounds LatticeSize KernelDiameter HouseholdOrPopulationMap PersonsPerHousehold\n");
+		printf("Incorrect number of input parameters.\n");
+		printf("./DigPopPopulationDensity <OutputFileName> <InputDigPopNamePreNumber> <MinRzn> <NumberRzn> <ProjectionCode> <NorthBounds> <EastBounds> <SoutBound> <WestBounds> <LatticeSize> <KernelDiameter> <HouseholdOrPopulationMap> <PersonsPerHousehold>\n");
 	}
 
 	char * personColName;
