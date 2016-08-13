@@ -2,19 +2,20 @@
 
 PopulationDensity is software developed to generate population density maps of digital population realizations using kernel density estimation.
 
-Software instruction at
+# Software instruction
 http://digitalpopulations.pbworks.com/w/page/110076190/PopulationDensity
 
-What does it do?
+# What does it do?
 For each Digital Populations realizations, it generates either:
   A density map of households in the realization; or
   A density map of individual persons in the realization
 as specified by the user
 
-Prerequisites
+# Prerequisites
   GDAL
 
-To run, find the compiled executable (i.e. DigPopPopulationDensity) and run it with the following arguments:
+# To run
+Find the compiled executable (i.e. DigPopPopulationDensity) and run it with the following arguments:
 ./DigPopPopulationDensity <OutputFileName> <InputDigPopNamePreNumber> <MinRzn> <NumberRzn> <ProjectionCode> <NorthBounds> <EastBounds> <SoutBound> <WestBounds> <LatticeSize> <KernelDiameter> <HouseholdOrPopulationMap> <PersonsPerHousehold>(For population density)
 
 Input arguments:
