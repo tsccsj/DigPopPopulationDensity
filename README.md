@@ -16,12 +16,12 @@ as specified by the user
 
 # To run
 Find the compiled executable (i.e. DigPopPopulationDensity) and run it with the following arguments:
-./DigPopPopulationDensity <OutputFileName> <InputDigPopNamePreNumber> <MinRzn> <NumberRzn> <ProjectionCode> <NorthBounds> <EastBounds> <SoutBound> <WestBounds> <LatticeSize> <KernelDiameter> <HouseholdOrPopulationMap> <PersonsPerHousehold>(For population density)
+DigPopPopulationDensity OutputFileName InputDigPopNamePreNumber MinRzn NumberRzn ProjectionCode NorthBounds EastBounds SoutBound WestBounds LatticeSize KernelDiameter HouseholdOrPopulationMap PersonsPerHousehold(For population density)
 
 Input arguments:
- 1. OutputFileName: the name and directory of output files. It is assumed that output maps will be named as <OutputFile>_rzn###.tif
+ 1. OutputFileName: the name and directory of output files. It is assumed that output maps will be named as 'OutputFile'_rzn'RznNumber'.tif
  2. InputDigPopNamePreNumber: the name and directory of input Digital Populations realizations files.
-  i. It is assumed that input household files will be named <InputFile><realization#>-households.csv 
+  i. It is assumed that input household files will be named 'InputFile''RznNumber'-households.csv 
  3. MinRzn: the index of the first realization to be analyzed
  4. NumRzn: the number of realizations to be analyzed
   i. Realization number is assumed to have three digit in file names 
